@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ohekal.github.io/Notes-App",
   "name": "app",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +17,9 @@
     "react-split": "^2.0.14",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
+  "scripts": {      
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "@types/showdown": "^2.0.0"
+    "@types/showdown": "^2.0.0",
+    "gh-pages": "^4.0.0"
   }
 }
